@@ -1,0 +1,31 @@
+
+✦ I ran this project by setting up two separate servers—one for the Backend (Python) and one for the Frontend (React)—and running 
+  them in the background simultaneously.
+
+  Here is the step-by-step breakdown of how it’s currently running:
+
+  1. The Backend (Python + FastAPI)
+  I created a FastAPI server that acts as the "brain" of the app. It handles file uploads and controls the AI engine (Meta        
+  Demucs).
+   * Environment: I used a Python virtual environment to install specific versions of torch, torchaudio, and demucs that are
+     stable on Windows.
+   * Command: I ran it using:
+
+   1     cd backend
+   2     python main.py
+   * Port: It is listening on http://localhost:8000.
+
+  2. The Frontend (React + Vite)
+  I built a modern web interface using React and TypeScript.
+   * Setup: I initialized the project with Vite for speed and used Vanilla CSS for the styling.
+   * Command: I ran it using:
+
+   1     cd frontend
+   2     npm run dev -- --host
+   * Port: It is running on http://localhost:5173.
+
+  3. How they work together
+   * When you upload a file in your browser (5173), the React app sends it to the Python API (8000).
+   * The Python code saves the file to the uploads/ folder and starts the Demucs AI process.
+   * Once Demucs finishes, it saves the results (vocals and instrumental) into the processed/ folder.
+   * The Python server then tells the React app where to find those files so you can listen to and download them.
