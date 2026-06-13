@@ -2,7 +2,7 @@
 
 A high-quality, local audio source separation tool that splits any MP3 or WAV file into **Vocals** and **Instrumental** tracks. Powered by Meta's **Demucs** AI engine.
 
-![Project Preview](https://via.placeholder.com/800x400?text=AI+Voice+Remover+Web+Interface)
+![Project Preview](./frontend/src/assets/hero.png)
 
 ## ✨ Features
 *   **Web Interface:** Modern React + Vite frontend with drag-and-drop file upload.

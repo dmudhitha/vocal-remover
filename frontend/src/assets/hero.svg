@@ -1,0 +1,37 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" rx="20" fill="#1A1A1A"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="800" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#646CFF"/>
+      <stop offset="1" stop-color="#FF64B6"/>
+    </linearGradient>
+    <clipPath id="clip0">
+      <rect width="800" height="400" rx="20" fill="white"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip0)">
+    <!-- Background Waves -->
+    <path d="M-100 300C50 250 150 350 300 300C450 250 550 350 700 300C850 250 950 350 1100 300" stroke="url(#paint0_linear)" stroke-width="2" stroke-opacity="0.2">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M-100 300C50 250 150 350 300 300C450 250 550 350 700 300C850 250 950 350 1100 300;M-100 320C50 270 150 370 300 320C450 270 550 370 700 320C850 270 950 370 1100 320;M-100 300C50 250 150 350 300 300C450 250 550 350 700 300C850 250 950 350 1100 300"/>
+    </path>
+    <path d="M-100 200C100 100 200 300 400 200C600 100 700 300 900 200" stroke="url(#paint0_linear)" stroke-width="1" stroke-opacity="0.1"/>
+    
+    <!-- Central Icon -->
+    <circle cx="400" cy="180" r="80" fill="url(#paint0_linear)" fill-opacity="0.1" stroke="url(#paint0_linear)" stroke-width="2"/>
+    
+    <!-- Microphone with Mute/Cut line -->
+    <g transform="translate(375, 145) scale(1.5)">
+      <rect x="5" y="0" width="10" height="18" rx="5" fill="white"/>
+      <path d="M0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <line x1="10" y1="20" x2="10" y2="24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      <line x1="5" y1="24" x2="15" y2="24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      
+      <!-- The 'Separation' Slash -->
+      <line x1="-5" y1="25" x2="25" y2="-5" stroke="#FF4D4D" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <!-- Text -->
+    <text x="400" y="320" text-anchor="middle" fill="white" font-family="Arial" font-size="32" font-weight="bold">AI VOICE REMOVER</text>
+    <text x="400" y="350" text-anchor="middle" fill="white" fill-opacity="0.6" font-family="Arial" font-size="16">Separate Vocals &amp; Instrumentals with Precision</text>
+  </g>
+</svg>
